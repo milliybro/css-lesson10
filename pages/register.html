@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Register</title>
+   <link rel="stylesheet" href="../css/register.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+
+<body>
+   <nav>
+      <div class="container nav-container">
+         <div class="nav-logo">
+            <img src="../images/logo.svg" alt="img-logo">
+            <p>trend</p>
+         </div>
+         <ul class="nav-items">
+            <div class="nav-link">
+               <li><a href="#">Service</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contacts</a></li>
+            </div>
+            <div class="nav-btn">
+               <a href="login.html"><button>Log in</button></a>
+               <a href="../index.html"><button>Open an account</button></a>
+               <select name="language" id="language">
+                  <option value="English">EN</option>
+                  <option value="Uzbek">UZ</option>
+                  <option value="Russian">RU</option>
+               </select>
+            </div>
+         </ul>
+         <div class="hamburger" id="navbar-open">
+            <img src="../images/hamburger.svg" alt="hamburger-logo">
+         </div>
+         <div id="navbar-responsive">
+            <ul class="res-nav-list">
+               <li class="res-nav-item"><a href="#" class="res-nav-link">Service</a></li>
+               <li class="res-nav-item"><a href="#about" class="res-nav-link">About</a></li>
+               <li class="res-nav-item"><a href="#service" class="res-nav-link">Contacts</a></li>
+               <li class="res-nav-item"><button class="res-nav-btn">Log in</button></li>
+               <li class="res-nav-item"><button class="res-nav-btn">Open an account</button></li>
+               <li class="res-nav-item"><select name="language" id="language">
+                     <option value="English">EN</option>
+                     <option value="Uzbek">UZ</option>
+                     <option value="Russian">RU</option>
+                  </select></li>
+
+            </ul>
+            <button id="navbar-close">
+               <img src="../images/close.svg" alt="close">
+            </button>
+
+         </div>
+      </div>
+   </nav>
+
+   <main>
+      <section id="register">
+         <div class="container">
+            <div class="register">
+               <div class="register-content">
+                  <div class="register-logo">
+                     <img src="../images/logo.svg" alt="img-logo">
+                     <p class="register-logo-p">trend</p>
+                  </div>
+                  <h1>Welcome to ByTrend!</h1>
+                  <div class="register-login">
+                     <p class="register-content-p">Already have an account?</p>
+                     <a href="#">Log in</a>
+                  </div>
+               </div>
+
+
+               <form action="#">
+                  <div class="register-email">
+                     <label for="promo">Email<sup>*</sup></label>
+                     <input required type="email" name="email" id="email" placeholder="Email address">
+                  </div>
+
+                  <div class="register-phone">
+                     <label for="phone">Phone<sup>*</sup></label>
+                     <div class="phone-str">
+                        <input required type="tel" name="phone" id="phone" placeholder="90-496-90-07">
+                        <!-- <input required type="tel" name="phone" id="code" placeholder="+998"> -->
+                        <p>+998</p>
+                     </div>
+                  </div>
+
+                  <div class="register-addres">
+                     <div class="addres-first">
+                        <h2>Country<sup>*</sup></h2>
+                        <select name="country" id="country">
+                           <option value="rus">Russia</option>
+                           <option value="uzb">Uzbekistan</option>
+                           <option value="eng">England</option>
+                           <option value="usa">USA</option>
+                           <option value="kor">Korea</option>
+                        </select>
+                     </div>
+                     <div class="addres-second">
+                        <label for="city">City<sup>*</sup></label>
+                        <input required type="text" name="city" id="city" placeholder="Name of the city">
+                     </div>
+                  </div>
+
+                  <div class="register-password">
+                     <label for="password">Password<sup>*</sup><img src="../images/que.svg" alt="que"></label>
+                     <div class="password-box">
+                        <input required type="password" name="password" id="password" placeholder="Your new password">
+                        <i class="bi bi-eye-slash" id="togglePassword"></i>
+                     </div>
+                  </div>
+
+                  <div class="register-passcon">
+                     <label for="passcon">Confirm password<sup>*</sup></label>
+                     <input required type="password" name="passcon" id="passcon" placeholder="Confirm password">
+                  </div>
+
+                  <div class="register-btn">
+                     <button type="submit" formaction="login.html">
+                        Register
+                        <img src="../images/row.svg" alt="row">
+                     </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <footer>
+      <div class="container">
+         <div class="footer">
+            <p>By signing up, you are agreeing to our <span>Terms & Conditions</span> and <span>Privacy Policy</span>.
+            </p>
+         </div>
+      </div>
+   </footer>
+   <script src="../js/main.js"></script>
+</body>
+
+</html>

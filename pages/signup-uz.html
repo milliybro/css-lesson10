@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sign Up</title>
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+   <nav>
+      <div class="container nav-container">
+         <div class="nav-logo">
+            <img src="../images/logo.svg" alt="img-logo">
+            <p>trend</p>
+         </div>
+         <ul class="nav-items">
+            <div class="nav-link">
+               <li><a href="#">Xizmatlar</a></li>
+               <li><a href="#">Haqida</a></li>
+               <li><a href="#">Bog'lanish</a></li>
+            </div>
+            <div class="nav-btn">
+               <a href="login.html"><button>Kirish</button></a>
+               <a href="../index.html"><button>Hisob ochish</button></a>
+               <select name="language" id="language">
+                  <option value="English">EN</option>
+                  <option selected value="Uzbek">UZ</option>
+                  <option value="Russian">RU</option>
+               </select>
+               <div class="dropdown">
+                  <a href="#language"><img src="../images/uz.png" alt="uz"> O'ZBEK</a>
+                  <ul class="dropdown-content">
+                     <li class="dd-item"><a href="../index.html" class="dd-link"><img src="../images/eng.png" alt="eng"> ENGLISH</a></li>
+                     <li class="dd-item"><a href="signup-ru.html" class="dd-link"><img src="../images/ru.png" alt="ru"> РУССКИЙ</a></li>
+                  </ul>
+               </div>
+            </div>
+         </ul>
+         <div class="hamburger" id="navbar-open">
+            <img src="../images/hamburger.svg" alt="hamburger-logo">
+         </div>
+         <div id="navbar-responsive">
+            <ul class="res-nav-list">
+               <li class="res-nav-item"><a href="#" class="res-nav-link">Xizmatlar</a></li>
+               <li class="res-nav-item"><a href="#about" class="res-nav-link">Haqida</a></li>
+               <li class="res-nav-item"><a href="#service" class="res-nav-link">Bog'lanish</a></li>
+               <li class="res-nav-item"><button class="res-nav-btn">Kirish</button></li>
+               <li class="res-nav-item"><button class="res-nav-btn">Hisob ochish</button></li>
+               <li class="res-nav-item"><select name="language" id="language">
+                     <option value="English">EN</option>
+                     <option selected value="Uzbek">UZ</option>
+                     <option value="Russian">RU</option>
+                  </select></li>
+
+            </ul>
+            <button id="navbar-close">
+               <img src="../images/close.svg" alt="close">
+            </button>
+
+         </div>
+      </div>
+   </nav>
+
+   <main>
+      <section id="signup">
+         <div class="container">
+            <div class="signup">
+               <div class="signup-content">
+                  <div class="signup-logo">
+                     <img src="../images/logo.svg" alt="img-logo">
+                     <p class="signup-logo-p">trend</p>
+                  </div>
+                  <h1>ByTrend ga Xush kelibsiz!</h1>
+                  <div class="signup-login">
+                     <p class="signup-content-p">Hisobingiz bormi?</p>
+                     <a href="login.html">Kirish</a>
+                  </div>
+               </div>
+               <form action="#">
+                  <div class="signup-name">
+                     <div class="name-first">
+                        <label for="firstname">Ismingiz<sup>*</sup></label>
+                        <input required type="text" name="firstname" id="firstname" placeholder="Ismingizni kiriting">
+                     </div>
+                     <div class="name-second">
+                        <label for="lastname">Familiyangiz<sup>*</sup></label>
+                        <input required type="text" name="lastname" id="lastname" placeholder="Familiyangizni kiriting">
+                     </div>
+                  </div>
+
+                  <div class="signup-date">
+                     <label for="date">Tug'ilgan kuningiz<sup>*</sup></label>
+                     <input min="1990-01-01" max="2023-6-15" required type="date" name="date" id="date">
+                  </div>
+
+                  <div class="signup-gender">
+                     <h2>Jinsingiz<sup>*</sup></h2>
+                     <div class="genders">
+                        <div class="gender-female">
+                           <input type="radio" name="gender" id="female" value="female">
+                           <label for="female">Ayol</label>
+                        </div>
+                        <div class="gender-male">
+                           <input type="radio" name="gender" id="male" value="male">
+                           <label for="male">Erkak</label>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="signup-skype">
+                     <label for="skype">Skype hisobingiz</label>
+                     <input type="text" name="skype" id="skype" placeholder="Skype nomingizni kiriting">
+                  </div>
+
+                  <div class="signup-promo">
+                     <label for="promo">Promo kod</label>
+                     <input type="text" name="promo" id="promo" placeholder="Promo kod kiriting">
+                  </div>
+
+                  <div class="signup-btn">
+                     <button type="submit" formaction="register.html">
+                        Keyingi
+                        <img src="../images/row.svg" alt="row">
+                     </button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <footer>
+      <div class="container">
+         <div class="footer">
+            <p>©2020 Barcha huquqlar himoyalangan. Lorem Technologies, Inc.</p>
+         </div>
+      </div>
+   </footer>
+   <script src="js/main.js"></script>
+</body>
+
+</html>
